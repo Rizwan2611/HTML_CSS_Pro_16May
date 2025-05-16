@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FlavorFlex Kitchen</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+        <style>
+            /* Bright, energetic theme with gradients */
+            :root {
+                --gradient-bg: linear-gradient(135deg, #fffaf0 0%, #ffe0b2 100%);
+                --gradient-card: linear-gradient(135deg, #fff5e6 0%, #ffd54f 100%);
+                --gradient-accent: linear-gradient(135deg, #ff6f00 0%, #ff8f00 100%);
+                --text-dark: #3e2723;
+                --text-muted: #795548;
+                --border-radius: 12px;
+                --spacing: 1.5rem;
+            }
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', sans-serif;
+            }
+            body {
+                background: var(--gradient-bg);
+                color: var(--text-dark);
+                line-height: 1.6;
+            }
+            header, nav, .Box01, .Box2 {
+                width: 100%;
+                padding: var(--spacing);
+            }
+            header {
+                background: var(--gradient-accent);
+                border-bottom: 4px solid #ff6f00;
+                text-align: center;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+            }
+            header h2 {
+                font-size: 2.5rem;
+                color: #fff;
+                letter-spacing: 2px;
+                text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+            }
+            header p {
+                color: var(--text-muted);
+                margin-top: 0.5rem;
+                font-style: italic;
+            }
+            nav {
+                background: var(--gradient-card);
+                display: flex;
+                justify-content: center;
+                gap: var(--spacing);
+                padding: 1rem 0;
+                border-top: 2px solid #ff6f00;
+                border-bottom: 2px solid #ff6f00;
+            }
+            nav a {
+                color: var(--text-dark);
+                text-decoration: none;
+                padding: 0.5rem 1rem;
+                font-weight: 600;
+                border: 2px solid transparent;
+                border-radius: var(--border-radius);
+                transition: background 0.3s, transform 0.3s;
+            }
+            nav a:hover {
+                background: var(--gradient-accent);
+                color: #fff;
+                transform: translateY(-2px);
+            }
+            .Box01, .Box2 {
+                background: var(--gradient-card);
+                margin-top: var(--spacing);
+                border-radius: var(--border-radius);
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            }
+            section {
+                padding: var(--spacing);
+                margin: var(--spacing) 0;
+                border-radius: var(--border-radius);
+            }
+            .section1 {
+                background: linear-gradient(135deg, #ffe0b2, #fff3e0);
+                border: 2px dashed #ffd54f;
+            }
+            .section1 h2 {
+                color: #ff6f00;
+                font-size: 2rem;
+            }
+            .section1 p {
+                color: var(--text-dark);
+                margin-top: 1rem;
+                font-weight: 300;
+            }
+            .section2 {
+                background: linear-gradient(135deg, #ffcc80, #ffe0b2);
+                border: 2px solid #ff6f00;
+            }
+            .section2 h1 {
+                color: var(--text-dark);
+                font-size: 2rem;
+            }
+            .announcement {
+                background: linear-gradient(135deg, #fff3e0, #fff5e6);
+                color: var(--text-dark);
+                padding: 1rem;
+                margin-top: var(--spacing);
+                border-radius: var(--border-radius);
+                border: 2px dashed #ffd54f;
+            }
+            .announcement h2 {
+                font-size: 1.4rem;
+                font-weight: 400;
+            }
+            .section3 {
+                background: linear-gradient(135deg, #fff3e0, #fffaf0);
+                border: 2px dashed #ffd54f;
+            }
+            .section3 h1 {
+                color: #ff6f00;
+                font-size: 2rem;
+            }
+            .Speciality {
+                background: linear-gradient(135deg, #fffaf0, #fff5e6);
+                padding: 1rem;
+                margin-top: var(--spacing);
+                border-radius: var(--border-radius);
+                border: 2px solid #ff6f00;
+            }
+            ul {
+                list-style: none;
+            }
+            li {
+                margin-bottom: 1rem;
+                font-weight: 300;
+            }
+            li b {
+                color: #ff6f00;
+                font-weight: 600;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2>FlavorFlex Kitchen</h2>
+            <p>Life's messy, Plates shouldn't be.</p>
+        </header>
+        <nav>
+            <a href="Home.html" target="_blank">Home 🏠</a>
+            <a href="Location.html" target="_blank">Location 🗺️</a>
+            <a href="Menu.html" target="_blank">Menu 🗒️</a>
+            <a href="Contact.html" target="_blank">Contact 📞</a>
+            <a href="SocialMedia.html" target="_blank">SocialMedia 📱</a>
+        </nav>
+        <div class="Box01">
+            <section class="section1">
+                <h2>Hey Bro! Wait</h2>
+                <p>We're not just serving food, we're dishing out vibes. From buttery biryanis to fiery curries and street-style snacks that slap, every plate here is a full-send flavor experience. Pull up solo or squad deep — come hungry, leave hyped, and whatever happens in life, just curry on, bro.</p>
+            </section>
+            <section class="section2">
+                <h1>Announcement</h1>
+                <div class="announcement">
+                    <h2>“ALERT 🚨: Biryani so good, it got ghosted by your ex for being too spicy.”</h2>
+                </div>
+            </section>
+        </div>
+        <div class="Box2">
+            <section class="section3">
+                <h1>Speciality</h1>
+                <div class="Speciality">
+                    <ul>
+                        <li><b>Butter Baddie 🔥</b>: Our glow-up version of butter chicken — creamy, dreamy, but packing unexpected heat. One bite and you'll be simping.</li>
+                        <li><b>Ghosted by Spice 👻</b>: This Naga-style curry comes with zero apologies and a ghost pepper kick that disappears faster than your last situationship.</li>
+                        <li><b>Mad Vibes Curry 😤</b>: Inspired by South India's iconic Madras curry, this dish is deep, intense, and chaotic — just like your late-night thoughts.</li>
+                        <li><b>Andhra Afterburn 🥵</b>: Marinated in green chilies and attitude. First bite's fire, second bite's commitment issues, third bite? You're in love.</li>
+                        <li><b>Hot Mess Express 🌶️</b>: Kolhapuri-style chicken that's messy, spicy, and way too fun to handle. Think street-food energy with a mic-drop aftertaste.</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
